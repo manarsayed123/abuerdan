@@ -1,0 +1,9 @@
+{% load rest_framework %}
+<form method='post' action='/weather/'>
+   {% csrf_token %}
+
+   <input type="number" name="temperature" placeholder="Temperature range value[19:29]">
+   <input type="number" name="humidity"placeholder="Humidity range value[35:65]" >
+
+   <button class="edit-user" type="submit">add</button>
+</form>

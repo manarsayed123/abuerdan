@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8    ">
+</head>
+<body>
+<h2>Weather Data</h2>
+<table style="  border: 1px solid black;width:100%">
+    <tr>
+        <th style="text-align:left">ID</th>
+        <th style="text-align:left">Temperature</th>
+        <th style="text-align:left">Humidity</th>
+        <th style="text-align:left">Created at</th>
+    </tr>
+
+    {% for item in data %}
+        <tr>
+            <td>{{ item.id }} </td>
+            <td>{{ item.temperature }} </td>
+            <td>{{ item.humidity }} </td>
+            <td>{{ item.created_at }} </td>
+
+
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
